@@ -89,7 +89,7 @@ data_list_cbind                           <- dplyr::bind_cols(geneid_ercc, data_
 data_list_cbind[is.na(data_list_cbind)]   <- 0
 
 
-# Data as tibble & replace NA values with 0
+# Data as tibble
 merged_data_tib <- tibble::as_tibble(data_list_cbind)
 
 
